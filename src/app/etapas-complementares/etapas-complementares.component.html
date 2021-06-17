@@ -1,0 +1,9 @@
+<!-- <ul *ngIf="totalAngularPackages | async; let posts">
+  <li *ngFor="let post of posts">
+      <span>{{post.name}}</span>
+  </li>
+</ul> -->
+{{ totalAngularPackagesA | json }}
+<p *ngFor="let posts of totalAngularPackagesA">{{posts[0]}}</p>
+
+
