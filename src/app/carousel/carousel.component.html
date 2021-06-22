@@ -1,0 +1,29 @@
+<!-- {{totalNovo['package'].name | json}} -->
+<div *ngFor="let posts of totalNovo ">
+
+  <p>{{ posts['package']?.name }}</p>
+  <p>{{ posts['package']?.description }}</p>
+  <p>{{ posts['package']?.links.bugs }}</p>
+  <p>{{ posts['package']?.links.homepage }}</p>
+  <p>{{ posts['package']?.links.npm }}</p>
+  <p>{{ posts['package']?.links.repository }}</p>
+
+
+  <section *ngFor="let itens of posts['package'].maintainers; index as i ">
+
+    <p>N-{{i}} -> {{ itens.username }} -> {{ itens.email }}</p>
+
+  </section>
+
+  <p>{{ posts['package']?.name }}</p>
+  <p>{{ posts['package']?.publisher.email }}</p>
+  <p>{{ posts['package']?.publisher.username }}</p>
+  <p>{{ posts['package']?.scope }}</p>
+
+  <p>{{ posts['package']?.version }}</p>
+  <p>{{ posts['score']?.detail.maintenance }}</p>
+  <p>{{ posts['score']?.detail.popularity }}</p>
+  <p>{{ posts['score']?.detail.quality }}</p>
+  <p>{{ posts['score']?.final }}</p>
+  <p>{{ posts['searchScore'] }}</p><br>
+</div>

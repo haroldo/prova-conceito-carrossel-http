@@ -1,9 +1,33 @@
-<!-- <ul *ngIf="totalAngularPackages | async; let posts">
-  <li *ngFor="let post of posts">
-      <span>{{post.name}}</span>
-  </li>
-</ul> -->
-{{ totalAngularPackagesA | json }}
-<p *ngFor="let posts of totalAngularPackagesA">{{posts[0]}}</p>
+<!-- {{ (totalNovo | json) }} -->
+<!--
+<div *ngFor="let posts of totalNovo ">
 
+  <p>{{ posts.package.date }}</p>
+  <p>{{ posts.package.author?.name }}</p>
+  <p>{{ posts.package.description }}</p>
+  <p>{{ posts.package.links.bugs }}</p>
+  <p>{{ posts.package.links.homepage }}</p>
+  <p>{{ posts.package.links.npm }}</p>
+  <p>{{ posts.package.links.repository }}</p>
 
+  <section *ngFor="let itens of posts.package.maintainers; index as i ">
+
+    <p>N-{{i}} -> {{ itens.username }} -> {{ itens.email }}</p>
+
+  </section>
+
+  <p>{{ posts.package?.name }}</p>
+  <p>{{ posts.package.publisher.email }}</p>
+  <p>{{ posts.package.publisher.username }}</p>
+  <p>{{ posts.package.scope }}</p>
+
+  <p>{{ posts.package.version }}</p>
+  <p>{{ posts.score.detail.maintenance }}</p>
+  <p>{{ posts.score.detail.popularity }}</p>
+  <p>{{ posts.score.detail.quality }}</p>
+  <p>{{ posts.score.final }}</p>
+  <p>{{ posts.searchScore }}</p><br>
+</div> -->
+<app-header></app-header>
+<app-carousel [totalNovo]="totalNovo"> </app-carousel>
+<app-footer></app-footer>

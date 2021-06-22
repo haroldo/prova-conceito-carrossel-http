@@ -7,12 +7,18 @@ import { SplashScreenComponent } from './splash-screen/splash-screen.component';
 import { EtapasComplementaresComponent } from './etapas-complementares/etapas-complementares.component';
 import { HttpClient } from '@angular/common/http';
 import { HttpClientModule } from '@angular/common/http';
+import { HeaderComponent } from './header/header.component';
+import { CarouselComponent } from './carousel/carousel.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SplashScreenComponent,
-    EtapasComplementaresComponent
+    EtapasComplementaresComponent,
+    HeaderComponent,
+    CarouselComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
