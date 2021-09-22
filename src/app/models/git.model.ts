@@ -1,25 +1,25 @@
-export interface Links {
+ interface Links {
   npm: string;
   homepage: string;
   repository: string;
   bugs: string;
 }
 
-export interface Author {
+ interface Author {
   name: string;
 }
 
-export interface Publisher {
+ interface Publisher {
   username: string;
   email: string;
 }
 
-export interface Maintainer {
+ interface Maintainer {
   username: string;
   email: string;
 }
 
-export interface Package {
+ interface Package {
   name: string;
   scope: string;
   version: string;
@@ -28,17 +28,17 @@ export interface Package {
   links: Links;
   author: Author;
   publisher: Publisher;
-  maintainers: Maintainer[];
+  maintainers: Array<Maintainer>;
   keywords: string[];
 }
 
-export interface Detail {
+ interface Detail {
   quality: number;
   popularity: number;
   maintenance: number;
 }
 
-export interface Score {
+ interface Score {
   final: number;
   detail: Detail;
 }
@@ -49,7 +49,7 @@ export interface Result {
   searchScore: number;
 }
 
-export interface GitModel {
+export interface GitModel<t> {
   total: number;
-  results: Result[];
+  results: Array<t>;
 }

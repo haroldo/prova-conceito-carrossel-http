@@ -1,8 +1,18 @@
-<!-- {{ (totalNovo | json) }} -->
-<!--
-<div *ngFor="let posts of totalNovo ">
+ <!-- {{ (totalNovo | json) }} -->
 
-  <p>{{ posts.package.date }}</p>
+
+
+
+
+ <!-- <asp:TextBox ID="Data_Nascimento" placeholder="Please specify a date" name="Data_Nascimento" TextMode="Date" runat="server" size="10" MaxLength="10" TabIndex="3"></asp:TextBox> -->
+
+<input type="date"  TextMode="Date">
+
+<div *ngFor="let posts of totalNovo">
+  <div class="p"> {{posts.package.name}} </div>
+</div>
+
+  <!--p>{{ posts.package.date }}</!--p>
   <p>{{ posts.package.author?.name }}</p>
   <p>{{ posts.package.description }}</p>
   <p>{{ posts.package.links.bugs }}</p>
@@ -29,5 +39,7 @@
   <p>{{ posts.searchScore }}</p><br>
 </div> -->
 <app-header></app-header>
-<app-carousel [totalNovo]="totalNovo"> </app-carousel>
+<div class="content">
+  <app-carousel [totalNovo]="totalNovo"> </app-carousel>
+</div>
 <app-footer></app-footer>

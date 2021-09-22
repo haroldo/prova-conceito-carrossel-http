@@ -9,14 +9,14 @@ import { map } from 'rxjs/operators'
 })
 export class CarouselComponent implements OnInit {
 
-  @Input('totalNovo') totalNovo : GitModel[]
+  @Input('totalNovo') totalNovo : any
 
 
   constructor() { }
 
   ngOnInit(): void {
 
-
+    console.log(this.totalNovo);
 
   }
 

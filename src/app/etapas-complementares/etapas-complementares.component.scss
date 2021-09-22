@@ -1,0 +1,74 @@
+
+/* Removes the clear button from date inputs */
+input[type="date"]::-webkit-clear-button {
+    display: none;
+}
+
+/* Removes the spin button */
+input[type="date"]::-webkit-inner-spin-button {
+    display: none;
+}
+
+/* Always display the drop down caret */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    color: #2c3e50;
+}
+
+/* A few custom styles for date inputs */
+input[type="date"] {
+    -webkit-appearance: inherit;
+    /*color: #227bc1;*/
+    font-family: "Helvetica", arial, sans-serif;
+    /*font-size: 18px;*/
+    /*border:1px solid #ecf0f1;*/
+    background: #ecf0f1;
+    /*padding:5px;*/
+    display: inline-block !important;
+    visibility: visible !important;
+    width: 100%;
+    height: 90px !important;
+    font-size: 14px;
+    line-height: 14px;
+    background-position: 9px center;
+    background-size: auto 15px;
+    padding-left: 15px;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    border: 1px solid #bcd7ec;
+    border-radius: 3px;
+    padding: 0 50px 0 15px;
+    position: relative;
+    z-index: 0;
+    font: 400 20.3333px Arial;
+    height: 25%;
+}
+
+
+#Corpo_lblDtNacimento {
+    display: none;
+}
+
+@media screen and (max-width:767px) {
+    input[type="date"] {
+        height: 50px !important;
+        font: 400 11.3333px Arial;
+        display: block;
+    }
+
+    #Corpo_lblDtNacimento {
+        display: block;
+            font-size: 12px;
+    }
+}
+
+input[type="date"], focus {
+    color: #227bc1;
+    /*box-shadow: none;*/
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+}
+
+#Corpo_chkList {
+    color: #227bc1;
+    font-size: large;
+}

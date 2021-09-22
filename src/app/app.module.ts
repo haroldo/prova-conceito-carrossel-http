@@ -10,6 +10,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { HeaderComponent } from './header/header.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { FooterComponent } from './footer/footer.component';
+import { HtmlCssComponent } from './html-css/html-css.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { FooterComponent } from './footer/footer.component';
     EtapasComplementaresComponent,
     HeaderComponent,
     CarouselComponent,
-    FooterComponent
+    FooterComponent,
+    HtmlCssComponent
   ],
   imports: [
     BrowserModule,

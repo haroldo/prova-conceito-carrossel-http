@@ -1,5 +1,5 @@
-<!-- {{totalNovo['package'].name | json}} -->
-<div *ngFor="let posts of totalNovo ">
+{{totalNovo | json}}
+<div *ngFor="let posts of totalNovo['results'] ">
 
   <p>{{ posts['package']?.name }}</p>
   <p>{{ posts['package']?.description }}</p>
